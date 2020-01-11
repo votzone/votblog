@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>添加项</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/add.css">
+	<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/util/util.js"></script>
+	<script src="js/base64.js"></script>
+	<script src="js/bmob/bmob-min.js"></script>
+	<script type="text/javascript" src="js/add.js"></script>
+</head>
+<body>
+	<div class="title">Bmob超市后台</div>
+	<div id="nav_left">
+		<a href="#">列表</a>
+		<a href="preview.html">预览</a>
+	</div>
+	<div id="nav_right" class="hint">
+		Hint
+	</div>
+	<dir id="content">
+		<table>
+			<tr><td></td><td id="split_txt">以下内容为展示内容</td></tr>
+			<tr>
+				<td>名称</td>
+				<td><input type="text" name="loan_name"></td>
+				<td width="100px"></td>
+			</tr>
+			<tr>
+				<td>图标</td>
+				<td><input id="icon_type_1" type="file" name="loan_icon_path" accept="image/*"> 
+					<input id="icon_type_2" style="display: none;" type="text" name="loan_icon_url"></td>
+				<td><input id="switch_icon_type" class="input_btn" type="submit" value="切换类型" /></td>
+			</tr>
+			<tr>
+				<td>产品URL</td>
+				<td><input type="text" name="loan_url"></td>
+			</tr>
+
+			<tr>
+				<td>标签</td>
+				<td><input type="text" name="loan_tags"></td>
+			</tr>
+			<tr>
+				<td>描述</td>
+				<td><input type="text" name="loan_desc"></td>
+			</tr>
+			<tr>
+				<td>额度</td>
+				<td><input type="text" name="loan_edu"></td>
+			</tr>
+			<tr>
+				<td>申请人数</td>
+				<td><input type="text" name="loan_apply_num"></td>
+			</tr>
+			<tr>
+				<td>顶部隐藏</td>
+				<td><input class="input_btn" style="-webkit-appearance: radio;" type="radio" name="ismargin" value="not_hide" checked="true" />不隐藏
+					<input class="input_btn" style="-webkit-appearance: radio;" type="radio" name="ismargin" value="hide_top" />隐藏</td>
+			</tr>
+			<!-- 以下内容为审核内容 -->
+			<tr><td></td><td id="split_txt">以下内容为审核内容</td></tr>
+			<tr>
+				<td>利率</td>
+				<td><input type="text" name="loan_rate"></td>
+				<td class="extra_area" style="width: 200px;">
+					<input class="input_btn" style="-webkit-appearance: radio;" type="radio" name="rate_p" value="daily" checked="true" />日利率
+					<input class="input_btn" style="-webkit-appearance: radio;" type="radio" name="rate_p" value="monthly" /> 月利率
+				</td>
+			</tr>
+			<tr>
+				<td>公司介绍</td>
+				<td><input type="text" name="loan_intro"></td>
+			</tr>
+			<tr>
+				<td>申请条件</td>
+				<td><input type="text" name="loan_strategy"></td>
+			</tr>
+			<tr>
+				<td>周期</td>
+				<td><input type="text" name="loan_periods"></td>
+			</tr>
+			<tr><td></td>
+				<td><input class="input_btn submit_btn" type="submit" value="提交" /></td>
+			</tr>
+		</table>
+	</dir>
+</body>
+</html>

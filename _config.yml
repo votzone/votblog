@@ -1,0 +1,35 @@
+# Jekyll configuration
+
+name: votzone的网站
+description: 学习、分享！
+
+# url is currently only used only for the RSS feed in feed.xml
+url: http://blog.votzone.com
+
+# baseurl will often be '', but for a project page on gh-pages, it needs to
+# be the project name.
+# *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
+#     run it like so: jekyll serve --baseurl=''
+baseurl: ''
+## default date_format
+date_format:
+  title: "%Y-%m-%d"
+  archive: '%m月'
+  categories: '%Y年-%m月'
+  tag: '%Y年-%m月'
+# Language
+lan: "cn"
+#
+# layout: default
+# comments: true
+# disqus: "votzone"
+
+
+paginate: 10
+# permalink: /:categories/:year/:month/:day/:title.html
+permalink: /:year/:month/:day/:title.html
+highlighter: rouge
+markdown: kramdown
+plugins: ['jekyll-paginate']
+
+exclude: ['README.md', 'LICENSE', "*.bak"]

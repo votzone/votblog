@@ -1,0 +1,7 @@
+body{background: #eee;}
+.topper{position: fixed;z-index: 10;width: 100%;}
+.top{position: relative;margin: 0 auto;width: 640px;height: 88px;border-bottom: 1px #ddd solid;background: #fff;opacity: .98;line-height: 88px;text-align: center;font-size: 34px;color: #111;z-index: 999;}
+.top_l{position: absolute;left: 0;z-index: 10;}
+.top_back{float: left;display: block;padding-left: 45px;padding-right: 5px;height: 88px;color: #111;font-size: 24px;background: url(../assets/img/navigationbuttonreturn.png) no-repeat 20px center;}
+.topper_zhanwei{height: 88px;}
+.content{margin: 0 auto;background: #eee;width: 640px;height: 2000px;}

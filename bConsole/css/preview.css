@@ -1,0 +1,7 @@
+body{background: #eee;}
+.layout{width: 640px;margin: 0 auto;position: relative;}
+.jd_nav{background: #fff;padding: 10px;border-bottom: 1px solid #e0e0e0;}
+.jd_nav ul li{width: 25%;height: 69px;float: left;}
+.jd_nav ul li a{width: 100%;display: block;}
+.jd_nav ul li a img{height: 40px;width: 40px;display: block;margin: 0 auto;}
+.jd_nav ul li a p{font-size: 12px;color: #888;text-align: center;margin-top: 6px;}
