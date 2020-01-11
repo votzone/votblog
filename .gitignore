@@ -6,3 +6,5 @@ _site
 *.gem
 *.bak
 .DS_Store
+_site
+.jekyll-cache
